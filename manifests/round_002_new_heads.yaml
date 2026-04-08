@@ -1,0 +1,42 @@
+{
+  "round_id": "round_002_new_heads",
+  "description": "Custom temporal heads (placeholders until patch applied)",
+  "runs": [
+    {
+      "run_id": "r002_gru_mlp",
+      "changes": { "temporal_arch": "gru_mlp" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "gru_mlp",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r002_gru_mlp"
+      }
+    },
+    {
+      "run_id": "r002_tcn_lite",
+      "changes": { "temporal_arch": "tcn_lite" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "tcn_lite",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r002_tcn_lite"
+      }
+    }
+  ]
+}

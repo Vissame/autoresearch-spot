@@ -1,0 +1,15 @@
+{
+  "primary_metric": "best_val_mAP",
+  "direction": "maximize",
+  "epsilon_review": 0.001,
+  "allowed_edit_surface": [
+    "/data/lyx/spot/model/modules.py",
+    "/data/lyx/spot/train_e2e.py"
+  ],
+  "forbidden_areas": [
+    "backbone selection",
+    "dataset preparation",
+    "metric definition",
+    "post-processing policy"
+  ]
+}

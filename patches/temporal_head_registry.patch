@@ -1,0 +1,5 @@
+# Placeholder patch
+# Target:
+# - /data/lyx/spot/train_e2e.py
+# Purpose:
+# - register custom temporal heads in argument choices and model init branch

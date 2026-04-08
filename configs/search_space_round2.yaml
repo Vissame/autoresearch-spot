@@ -1,0 +1,12 @@
+{
+  "round_id": "round_002_new_heads",
+  "search_axes": {
+    "temporal_arch": ["gru_mlp", "tcn_lite"]
+  },
+  "fixed": {
+    "feature_arch": "rny008_gsm",
+    "dataset": "soccernetv2",
+    "frame_dir": "/data/lyx/spot/frames/soccernetv2"
+  },
+  "notes": "Custom heads are placeholders until corresponding patches are implemented."
+}

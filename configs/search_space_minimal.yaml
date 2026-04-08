@@ -1,0 +1,11 @@
+{
+  "round_id": "round_001_existing_heads",
+  "search_axes": {
+    "temporal_arch": ["gru", "deeper_gru", "mstcn", "asformer", ""]
+  },
+  "fixed": {
+    "feature_arch": "rny008_gsm",
+    "dataset": "soccernetv2",
+    "frame_dir": "/data/lyx/spot/frames/soccernetv2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "round_id": "round_000_baseline",
+  "description": "Baseline run with rny008_gsm + gru",
+  "runs": [
+    {
+      "run_id": "r000_baseline_gru",
+      "changes": {
+        "temporal_arch": "gru"
+      },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "gru",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r000_baseline_gru"
+      }
+    }
+  ]
+}

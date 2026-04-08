@@ -1,0 +1,96 @@
+{
+  "round_id": "round_001_existing_heads",
+  "description": "Sweep existing built-in temporal heads",
+  "runs": [
+    {
+      "run_id": "r001_gru",
+      "changes": { "temporal_arch": "gru" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "gru",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r001_gru"
+      }
+    },
+    {
+      "run_id": "r001_deeper_gru",
+      "changes": { "temporal_arch": "deeper_gru" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "deeper_gru",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r001_deeper_gru"
+      }
+    },
+    {
+      "run_id": "r001_mstcn",
+      "changes": { "temporal_arch": "mstcn" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "mstcn",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r001_mstcn"
+      }
+    },
+    {
+      "run_id": "r001_asformer",
+      "changes": { "temporal_arch": "asformer" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "asformer",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r001_asformer"
+      }
+    },
+    {
+      "run_id": "r001_fc",
+      "changes": { "temporal_arch": "" },
+      "train_args": {
+        "dataset": "soccernetv2",
+        "frame_dir": "/data/lyx/spot/frames/soccernetv2",
+        "feature_arch": "rny008_gsm",
+        "temporal_arch": "",
+        "modality": "rgb",
+        "clip_len": 100,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "num_epochs": 150,
+        "warm_up_epochs": 3,
+        "criterion": "map",
+        "save_dir": "/data/lyx/autoresearch-spot/experiments/r001_fc"
+      }
+    }
+  ]
+}

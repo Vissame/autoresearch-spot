@@ -1,0 +1,5 @@
+# Placeholder patch
+# Target:
+# - /data/lyx/spot/model/modules.py
+# Purpose:
+# - add a lightweight TCN temporal head

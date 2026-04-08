@@ -1,0 +1,6 @@
+{
+  "run_id": null,
+  "best_val_mAP": null,
+  "best_epoch": null,
+  "artifact_dir": null
+}
